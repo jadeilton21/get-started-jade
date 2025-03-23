@@ -33,7 +33,7 @@ public class PetMachine {
         }
         water+=2;
     }
-    public void addS(){
+    public void addShampoo(){
         if(water==10){
 
             System.out.println("A capacidade de shampoo da máquina está no máximo.");
