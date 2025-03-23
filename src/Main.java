@@ -30,6 +30,7 @@ public class Main {
             option = scanner.nextInt();
 
             switch (option) {
+                case 5 -> verifiqueOshampoo();
                 case 6 -> checkIfHasPetInMachine();
                 case 7 -> setPetIntPetMachine();
                 case 8 -> petMachine.removePet();
@@ -38,6 +39,11 @@ public class Main {
             }
 
         }while (option != 0);
+    }
+
+    private static void verifiqueOshampoo() {
+        var amout = petMachine.getShampoo();
+        System.out.println("A maquina está no momento com " + amout + " litros de Shampoo");
     }
 
     private static void checkIfHasPetInMachine() {
