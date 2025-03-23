@@ -74,5 +74,12 @@ public class PetMachine {
         System.out.println("O pet" + this.pet.getName() + " está LIMPOOOOOOOO");
         this.pet = null;
     }
+
+    public void wash(){
+        this.water -= 10;
+        this.shampoo -= 2;
+        this.clean = true;
+
+    }
 }
 
