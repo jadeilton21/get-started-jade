@@ -30,10 +30,21 @@ public class Main {
             option = scanner.nextInt();
 
             switch (option) {
-                case 7 ->
+                case 7 -> setPetIntPetMachine();
             }
 
         }while (option != 0);
+    }
+
+    public static void setPetIntPetMachine(){
+
+        var name = " ";
+        while (name == null || name.isEmpty()) {}
+        System.out.println("Informe o nome do pet: ");
+
+        name = scanner.nextLine();
+        var pet = new Pet(name);
+        petMachine.setPet(pet);
     }
 
 }
