@@ -70,7 +70,8 @@ public class PetMachine {
 
     public void removePet(){
 
-
+        this.clean = this.pet.getClean();
+        System.out.println("O pet" + this.pet.getName() + " está LIMPOOOOOOOO");
         this.pet = null;
     }
 }
