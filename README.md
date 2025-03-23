@@ -1,4 +1,5 @@
 
+```mermaid
 classDiagram
     class Main {
         - static Scanner scanner
@@ -40,3 +41,4 @@ classDiagram
 
     Main --> PetMachine
     PetMachine --> Pet
+```
