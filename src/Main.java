@@ -30,6 +30,8 @@ public class Main {
             option = scanner.nextInt();
 
             switch (option) {
+
+                case 4 -> verficiarAguaWater();
                 case 5 -> verifiqueOshampoo();
                 case 6 -> checkIfHasPetInMachine();
                 case 7 -> setPetIntPetMachine();
@@ -39,6 +41,20 @@ public class Main {
             }
 
         }while (option != 0);
+    }
+
+    private static void setWaterAgua(){
+        System.out.println("Tentando Colocar Agua na máquina");
+        petMachine.addWater();
+    }
+
+    private static void seShampoo(){
+        System.out.println("Tentando Colocar Shampoo na máquina");
+        petMachine.addShampoo();
+    }
+    private static void verficiarAguaWater() {
+        var amout = petMachine.getWater();
+        System.out.println("A maquina está no momento com " + amout + " litros de Agua");
     }
 
     private static void verifiqueOshampoo() {
