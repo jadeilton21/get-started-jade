@@ -30,17 +30,20 @@ public class Main {
             option = scanner.nextInt();
 
             switch (option) {
-
+                case 1 -> petMachine.takeAShower();
+                case 2 ->  setWaterAgua();
+                case 3 -> seShampoo();
                 case 4 -> verficiarAguaWater();
                 case 5 -> verifiqueOshampoo();
                 case 6 -> checkIfHasPetInMachine();
                 case 7 -> setPetIntPetMachine();
                 case 8 -> petMachine.removePet();
                 case 9 -> petMachine.removePet();
-
+                case 0 -> System.exit(0);
+                default -> System.out.println("Opção Invalida");
             }
 
-        }while (option != 0);
+        }while (true);
     }
 
     private static void setWaterAgua(){
