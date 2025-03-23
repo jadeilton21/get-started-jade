@@ -5,9 +5,13 @@ import java.util.Scanner;
 public class Main {
 
 
+    private final static Scanner scanner = new Scanner(System.in);
+
+    private final static PetMachine petMachine = new PetMachine();
+
     public static void main(String[] args) {
         var option = -1;
-        var scanner = new Scanner(System.in);
+
 
 
         do{
