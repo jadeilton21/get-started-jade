@@ -79,7 +79,7 @@ public class PetMachine {
         this.water -= 10;
         this.shampoo -= 2;
         this.clean = true;
-
+        System.out.println("A máquina está limpaaaaaaaaa");
     }
 }
 
