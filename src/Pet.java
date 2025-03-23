@@ -6,7 +6,7 @@ public class Pet {
     private Boolean clean;
 
 
-    public Pet(String name, Boolean clean) {
+    public Pet(String name) {
         this.name = name;
         this.clean = clean;
     }
